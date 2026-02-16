@@ -1,0 +1,12 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: rgb(240, 247, 255);
+    border-radius: 12px;
+  }
+  
+  .title {
+    text-align: center;
+    color: rgb(64, 87, 111);
+  }
