@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import styles from './styles.module.css';
 
 interface IMovieFormProps {
   onAdd: (title: string) => void;
@@ -17,8 +17,9 @@ const MovieForm = ({ onAdd }: IMovieFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <input 
+        className={styles.input}
         type="text" 
         value={text} 
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value)} 
