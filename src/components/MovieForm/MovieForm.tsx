@@ -18,13 +18,13 @@ const MovieForm = ({ onAdd }: IMovieFormProps) => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <input 
+    <input 
         className={styles.input}
         type="text" 
         value={text} 
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value)} 
         placeholder="введите название фильма"
-      />
+    />
       <button type="submit">добавить</button>
     </form>
   );
