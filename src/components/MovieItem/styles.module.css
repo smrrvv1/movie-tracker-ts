@@ -6,8 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: rgb(0, 0, 0);
   }
   .watched {
     text-decoration: line-through;
-    color: rgb(123, 123, 123);
+    color: rgba(0, 0, 0, 0.474);
   }

@@ -2,11 +2,11 @@
     max-width: 600px;
     margin: 50px auto; 
     padding: 20px;
-    background-color: rgb(240, 247, 255);
+    background-color: rgb(196, 196, 196);
     border-radius: 12px;
   }
   
   .title {
     text-align: center;
-    color: rgb(64, 87, 111);
+    color: rgb(20, 31, 42);
   }
