@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IMovie } from "./types";
 import MovieForm from "./components/MovieForm/MovieForm";
 import MovieItem from "./components/MovieItem/MovieItem";
-import styles from "./App.module.css"; 
+import styles from "./styles.module.css"; 
 
 const App = () => {
   const [movies, setMovies] = useState<IMovie[]>([])
