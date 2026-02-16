@@ -1,0 +1,13 @@
+.card {
+    border: 1px solid rgb(226, 226, 226);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .watched {
+    text-decoration: line-through;
+    color: rgb(123, 123, 123);
+  }

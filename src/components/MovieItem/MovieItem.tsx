@@ -1,17 +1,17 @@
 import { IMovie } from "../../types";
-
+import styles from './styles.module.css';
 
 interface IMovieItemProps {
   movie: IMovie;
-  onDelete: (id: number) => void;
-  onToggle: (id: number) => void;
-  onLike: (id: number, delta: number) => void;
+  onDelete: (id: number) => void
+  onToggle: (id: number) => void
+  onLike: (id: number, delta: number) => void
 }
 
 const MovieItem = ({ movie, onDelete, onToggle, onLike }: IMovieItemProps) => {
   return (
-    <div>
-      <div>
+    <div className={styles.card}>
+      <div className={movie.isWatched ? styles.watched : ""}>
         <h3>{movie.title}</h3>
         <label>
           <input 
@@ -29,7 +29,7 @@ const MovieItem = ({ movie, onDelete, onToggle, onLike }: IMovieItemProps) => {
         <button onClick={() => onDelete(movie.id)}>❌</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default MovieItem;
